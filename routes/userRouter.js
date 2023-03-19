@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 userRouter.get("/", async (req, res) => {
   let data = await Users.findAll();
-  res.send({message:"Server 1", data});
+  res.send({message:"Server 2", data});
 });
 
 userRouter.post("/signup", async (req, res) => {
